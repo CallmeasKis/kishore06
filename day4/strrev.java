@@ -1,4 +1,4 @@
-public class stringReverse {
+ class stringReverse {
     public static void main(String[] args) {
         String str = "Hello World";
         char arr[]=new char[str.length()];
