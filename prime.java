@@ -1,22 +1,18 @@
 
-import java.util.Scanner;
 public class prime{
     public static void main(String[] args) {
-        int n;
-        Scanner sc =new Scanner(System.in);
-        System.out.println("enter the number");
-        n=sc.nextInt();
-        if(n==2||n==3||n==5||n==7)
-        {
-            System.err.println("prime number");
+        int n=81;
+        int sq=(int)Math.sqrt(n);
+        boolean flag=false;
+        for(int i=2;i<=sq;i++){
+            if(n%i==0){
+                flag = true;
+                break;
+            }
         }
-        else if(n%2==0||n%3==0||n%5==0||n%7==0){
-            System.err.println("not a prime number");
-        }
-        else{
-            System.out.println("prime number");
-
-        }
-
+        if(flag==true)
+         System.out.println("No");
+        else 
+        System.out.println("Yes");
     }
 }
